@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;200;300;400;600&display=swap");
 
 /****** Custom variables *******/
 
@@ -11,8 +11,8 @@
   /* --my_gradient2: linear-gradient(45deg, rgb(156, 39, 176), rgb(244, 191, 61)); */
   --swiper-theme-color: #fff200;
 
-  /* --primary: #ff5522; */
-  --primary: #fca582;
+  --primary: #ff5522;
+  /* --primary: #fca582; */
   --secondary: #161421;
   --tertiary: #191725;
   --quarternary: #1f1c2c;
@@ -27,9 +27,11 @@
   margin: 0px;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   line-height: 1.5;
   font-size: 1.3rem;
@@ -37,16 +39,19 @@ body {
   color: var(--my_black);
   background: var(--my_white);
 }
+
 img,
 picture,
 svg {
   max-width: 100%;
   display: block;
 }
+
 ul,
 ol {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -62,11 +67,13 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+
 .btn {
   display: block;
   border: none;
   font-weight: bold;
-  background: var(--my_gradient2);
+  /* background: var(--my_gradient2); */
+  background-color: var(--primary);
   color: white;
   padding: 0.25rem 1rem;
   border-radius: 0.5rem;
@@ -74,6 +81,7 @@ a {
   box-shadow: 0 1.125em 1em -1em var(--clr-accent);
   cursor: pointer;
 }
+
 .btn:hover,
 .btn:focus-visible {
   background-color: var(--clr-accent);
@@ -96,26 +104,104 @@ header {
   padding: 0.35rem;
   transition: all 0.3s ease 0s;
   z-index: 10;
-  background: var(--my_gradient);
+  background: #ffffff;
 }
+
 .sticky {
   padding: 0;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 5px 0px;
 }
+
 .logo {
   display: flex;
   align-items: center;
 }
+
 .logo span {
-  color: var(--clr-accent);
+  color: var(--primary);
 }
+
 nav ul {
   display: flex;
   gap: 1rem;
 }
+
+.dropdown-menu span {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.about-list, .works-list {
+  position: relative;
+}
+
+.dropdown-menu {
+  padding: 1rem;
+  padding-top: 0.5rem;
+  gap: 0;
+  font-size: 0.5rem;
+  width: 12rem;
+  border-radius: 5px;
+  color: rgb(45, 45, 45);
+  background-color: white;
+  position: absolute;
+  top: 2rem;
+  left: -4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  display: none;
+  /* box-shadow: 0px 0px 2px 0px black; */
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 40%);
+}
+
+.dropdown-menu span {
+  font-size: 0.9rem;
+}
+
+.dropdown-menu li {
+  transition: all 0.2s ease;
+}
+
+.dropdown-menu li:hover {
+  color: var(--primary);
+}
+
+.down-toggle {
+  transition: all 0.3s ease;
+  font-size: 0.75rem;
+  opacity: 0.5;
+}
+
+.dm-lists:hover .down-toggle {
+  transform: rotate(-180deg);
+}
+
+.about-list:hover .dm-1 {
+  display: flex;
+}
+
+.works-list:hover .dm-2 {
+  display: flex;
+}
+
+.works-list ul {
+  display: none;
+}
+
 nav li {
   cursor: pointer;
   font-size: 1.3rem;
+
+}
+
+nav ul li a {
+  font-weight: 600;
+}
+
+nav ul li i {
+  font-size: 1rem;
 }
 
 .hamburger-menu {
@@ -129,6 +215,7 @@ nav li {
   cursor: pointer;
   display: none;
 }
+
 .hamburger-menu .bar {
   position: relative;
   width: 100%;
@@ -137,6 +224,7 @@ nav li {
   border-radius: 3px;
   transition: all 0.5s ease 0s;
 }
+
 .bar::before,
 .bar::after {
   content: "";
@@ -147,18 +235,23 @@ nav li {
   border-radius: 3px;
   transition: all 0.5s ease 0s;
 }
+
 .bar::before {
   transform: translateY(-8px);
 }
+
 .bar::after {
   transform: translateY(8px);
 }
+
 header.active .hamburger-menu .bar {
   background-color: transparent;
 }
+
 header.active .bar::before {
   transform: translateY(0px) rotate(-45deg);
 }
+
 header.active .bar::after {
   transform: translateY(0px) rotate(45deg);
 }
@@ -166,39 +259,42 @@ header.active .bar::after {
 /* slider section */
 
 .slider-section {
+  /* width: min(1200px, 100% - 2rem); */
   margin-inline: auto;
   padding-top: 1.6rem;
+  margin-bottom: -2rem;
 }
 
 .swiper-slide {
   background: var(--my_gradient);
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
   height: 90vh !important;
-}
-
-.swiper {
-  margin-bottom: -2rem;
 }
 
 .slide-1 {
   background: url(/images/Banner-Pic_home-page-1.jpg) center center/cover;
 }
+
 .slide-2 {
   background: url(/images/Banner-Pic_home-page-2.jpeg) center center/cover;
 }
+
 .slide-3 {
   background: url(/images/Banner-Pic_home-page-3.jpg) center center/cover;
 }
+
 .slide-4 {
   background: url(/images/Banner-Pic_home-page-4.jpeg) center center/cover;
 }
+
 .slide-5 {
   background: url(/images/Banner-Pic_home-page-5.jpg) center center/cover;
 }
 
 .swipo {
+  /* margin: 0 3rem; */
   overflow: hidden;
-  padding-top: 3rem;
+  /* padding-block: 2rem; */
 }
 
 .swiper-pagination {
@@ -226,11 +322,12 @@ header.active .bar::after {
 /* Welcome section */
 
 .welcome {
-  background-color: #f9fff0;
+  background-color: white;
   margin: 0 auto 2rem;
   color: black;
   padding-block: 2rem;
 }
+
 .text-content {
   max-width: 38rem;
   font-size: 1.3rem;
@@ -239,6 +336,7 @@ header.active .bar::after {
 .text-content p {
   margin-bottom: 0.5rem;
 }
+
 .welcome img {
   width: min(37rem, 100%);
 }
@@ -347,9 +445,6 @@ header.active .bar::after {
   flex: 1;
   text-align: center;
 }
-/* .card > * {
-  z-index: 1;
-} */
 
 .card-header {
   font-size: 1.5rem;
@@ -394,7 +489,6 @@ footer a {
   line-height: 1.4rem;
   text-transform: uppercase;
   color: var(--primary);
-  font-family: "Fira Sans", sans-serif;
 }
 
 .ft-right {
@@ -409,7 +503,7 @@ footer a {
 
 .ft-right h3 {
   margin-bottom: 1.25rem;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.25rem;
   color: var(--primary);
   position: relative;
@@ -530,17 +624,20 @@ footer .f-bottom p {
     justify-content: center;
   }
 
-  header > .container {
+  header>.container {
     justify-content: space-between;
   }
 }
+
 @media (max-width: 1000px) {
   .logo {
     margin-left: 5vw;
   }
+
   .hamburger-menu {
     display: flex;
   }
+
   .menu-list {
     position: fixed;
     height: 100vh;
@@ -553,6 +650,7 @@ footer .f-bottom p {
     background: var(--my_gradient);
     transition: all 0.5s ease 0s;
   }
+
   header.active .menu-list {
     right: 0%;
   }
@@ -567,11 +665,13 @@ footer .f-bottom p {
     right: -125%;
     transition: all 0.5s ease 0s;
   }
+
   .donate-box a {
     margin: 1rem 0.5rem 6rem;
     font-size: 1.8rem;
     background: linear-gradient(to top, #fda085, #ffe07e);
   }
+
   header.active .donate-box {
     right: 0px;
   }
@@ -579,13 +679,16 @@ footer .f-bottom p {
   .menu-list li {
     margin-top: 2rem;
   }
+
   .menu-list li a {
     font-size: 23px;
     margin-left: -100%;
   }
+
   header.active .menu-list li a {
     margin-left: 0px;
   }
+
   header.active ul {
     flex-direction: column;
   }
