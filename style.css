@@ -9,10 +9,10 @@
   --my_gradient: linear-gradient(0deg, #fff1be, #f9fff0);
   --my_gradient2: linear-gradient(to top, #fda085, #f6d365);
   /* --my_gradient2: linear-gradient(45deg, rgb(156, 39, 176), rgb(244, 191, 61)); */
-  --swiper-theme-color: #fff200;
+  --swiper-theme-color: #ffffff;
 
+  /* --primary: #ff5522; */
   --primary: #ff5522;
-  /* --primary: #fca582; */
   --secondary: #161421;
   --tertiary: #191725;
   --quarternary: #1f1c2c;
@@ -105,6 +105,7 @@ header {
   transition: all 0.3s ease 0s;
   z-index: 10;
   background: #ffffff;
+  box-shadow: rgb(0 0 0 / 30%) 0 2px 20px;
 }
 
 .sticky {
@@ -268,7 +269,7 @@ header.active .bar::after {
 .swiper-slide {
   background: var(--my_gradient);
   /* border-radius: 0.5rem; */
-  height: 90vh !important;
+  height: 100vh !important;
 }
 
 .slide-1 {
@@ -316,7 +317,7 @@ header.active .bar::after {
 .swiper-button-next,
 .swiper-button-prev {
   font-size: 3rem;
-  color: rgb(255, 226, 78) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
 /* Welcome section */
@@ -494,6 +495,7 @@ footer a {
 .ft-right {
   background-color: var(--quarternary);
   padding: 1.5rem;
+  padding-bottom: 0.5rem;
   min-width: 20rem;
   width: 60%;
   display: flex;
@@ -532,7 +534,7 @@ footer a {
 }
 
 .ft-right a {
-  margin: 0.25rem;
+  margin: 0.35rem;
   font-size: 1rem;
   transition: all 0.3s ease;
 }
@@ -547,6 +549,7 @@ footer a {
   justify-content: flex-start;
   align-items: flex-start;
   min-width: 10rem;
+  margin-bottom: 1rem;
 }
 
 .ftl {
@@ -669,7 +672,7 @@ footer .f-bottom p {
   .donate-box a {
     margin: 1rem 0.5rem 6rem;
     font-size: 1.8rem;
-    background: linear-gradient(to top, #fda085, #ffe07e);
+    /* background: linear-gradient(to top, #fda085, #ffe07e); */
   }
 
   header.active .donate-box {
@@ -718,12 +721,34 @@ footer .f-bottom p {
 }
 
 @media (max-width: 550px) {
+
+  .ft-right {
+    justify-content: flex-start;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  .hamburger-menu {
+    margin: 0.25rem;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
   .logo {
     margin-left: 0px;
   }
 
   .main-heading {
     margin: 0 15% 20px;
+  }
+
+  .photo-gallery {
+    margin: 0;
+    padding-bottom: 1.5rem;
   }
 
   .photo-gallery img {
