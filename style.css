@@ -172,7 +172,6 @@ header.active .bar::after {
 /* slider section */
 
 .slider-section {
-  /* width: min(1200px, 100% - 2rem); */
   margin-inline: auto;
   padding-top: 1.6rem;
 }
@@ -181,6 +180,10 @@ header.active .bar::after {
   background: var(--my_gradient);
   border-radius: 0.5rem;
   height: 90vh !important;
+}
+
+.swiper {
+  margin-bottom: -2rem;
 }
 
 .slide-1 {
@@ -200,9 +203,8 @@ header.active .bar::after {
 }
 
 .swipo {
-  /* margin: 0 3rem; */
   overflow: hidden;
-  padding-block: 2rem;
+  padding-top: 3rem;
 }
 
 .swiper-pagination {
