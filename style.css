@@ -132,7 +132,8 @@ nav ul {
   font-weight: 400;
 }
 
-.about-list, .works-list {
+.about-list,
+.works-list {
   position: relative;
 }
 
@@ -194,7 +195,6 @@ nav ul {
 nav li {
   cursor: pointer;
   font-size: 1.3rem;
-
 }
 
 nav ul li a {
@@ -345,7 +345,7 @@ header.active .bar::after {
 /* Photo gallery */
 
 .photo-gallery {
-  margin: 3rem;
+  margin-block: 4rem;
 }
 
 .photo-gallery .container {
@@ -379,7 +379,7 @@ header.active .bar::after {
 /* Programme section */
 
 .programme-section {
-  padding-block: 1rem;
+  padding-block: 2rem 4rem;
   background: url(/images/card-bg.jpg) center center/cover;
   background-attachment: fixed;
   position: relative;
@@ -627,7 +627,7 @@ footer .f-bottom p {
     justify-content: center;
   }
 
-  header>.container {
+  header > .container {
     justify-content: space-between;
   }
 }
@@ -721,7 +721,6 @@ footer .f-bottom p {
 }
 
 @media (max-width: 550px) {
-
   .ft-right {
     justify-content: flex-start;
   }
