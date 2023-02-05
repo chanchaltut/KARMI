@@ -173,12 +173,12 @@ nav ul {
   position: absolute;
   top: 4.2rem;
   left: -4rem;
-  /* display: flex; */
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   display: none;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 40%);
+  z-index: 10;
 }
 
 .dropdown-menu span {
@@ -200,16 +200,8 @@ nav ul {
   opacity: 0.5;
 }
 
-.dm-lists:hover .down-toggle {
+.rotate {
   transform: rotate(-180deg);
-}
-
-.about-list:hover .dm-1 {
-  display: flex;
-}
-
-.works-list:hover .dm-2 {
-  display: flex;
 }
 
 .d-flex {
@@ -297,7 +289,8 @@ header.active .bar::after {
 .swiper-slide h2 {
   text-align: center;
   font-size: 3rem;
-  margin-top: 8rem;
+  width: 70%;
+  margin: 15rem auto 0;
   color: white;
   text-shadow: rgb(0 0 0 / 90%) 2px 2px 2px;
 }
@@ -480,6 +473,7 @@ header.active .bar::after {
 .mission-vision-section img {
   width: min(30rem, 100%);
 }
+
 .mission-vision-section h3 {
   display: inline;
 }
@@ -741,6 +735,14 @@ footer .f-bottom p {
 
   .main-heading {
     margin: 0 25% 20px;
+  }
+
+  .nav-list:hover::after {
+    width: 50%;
+  }
+
+  .dropdown-menu {
+    left: 2rem;
   }
 }
 
