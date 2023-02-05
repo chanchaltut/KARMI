@@ -3,13 +3,14 @@
 /****** Custom variables *******/
 
 :root {
-  --clr-accent: #2b9226;
   --my_white: #f0f4ff;
   --my_black: #333;
   --my_gradient: linear-gradient(0deg, #fff1be, #f9fff0);
   --my_gradient2: linear-gradient(to top, #fda085, #f6d365);
   --swiper-theme-color: #ffffff;
-  --primary: #ff5522;
+  --primary: #ff6537;
+  /* --primary: #ff5522; */
+  --primary-light: #ff7f58;
   --secondary: #161421;
   --tertiary: #191725;
   --quarternary: #1f1c2c;
@@ -80,7 +81,7 @@ a {
 
 .btn:hover,
 .btn:focus-visible {
-  background-color: var(--clr-accent);
+  background-color: var(--primary-light);
   box-shadow: none;
 }
 
@@ -281,6 +282,14 @@ header.active .bar::after {
 .swiper-slide {
   background: var(--my_gradient);
   height: 100vh !important;
+}
+
+.swiper-slide h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 8rem;
+  color: white;
+  text-shadow: rgb(0 0 0 / 90%) 2px 2px 2px;
 }
 
 .slide-1 {
@@ -541,6 +550,7 @@ footer a {
 
 .ft-right a:hover {
   transform: translateX(0.5rem);
+  color: var(--primary-light);
 }
 
 .ftr-boxes {
@@ -628,7 +638,7 @@ footer .f-bottom p {
     justify-content: center;
   }
 
-  header>.container {
+  header > .container {
     justify-content: space-between;
   }
 }
@@ -764,5 +774,4 @@ footer .f-bottom p {
   .ftr-boxes {
     margin-left: 1.5rem;
   }
-
 }
