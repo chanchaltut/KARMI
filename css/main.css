@@ -468,14 +468,15 @@ header.active .bar::after {
 /* footer */
 
 footer {
-  color: gray;
-  font-weight: 300;
+  color: #9b9b9b;
+  font-weight: 400;
   line-height: 1rem;
   font-size: 1rem;
 }
 
 footer a {
-  color: gray;
+  color: #9b9b9b;
+  font-weight: 400;
 }
 
 .f-top {
@@ -617,7 +618,7 @@ footer .f-bottom {
 
 footer .f-bottom p {
   text-align: center;
-  color: gray;
+  color: #b0b0b0;
   font-weight: 600;
 }
 
