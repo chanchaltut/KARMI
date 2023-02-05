@@ -3,34 +3,30 @@ const navLists = document.querySelectorAll(".nav-list");
 const DMLists = document.querySelectorAll(".dm-lists");
 const hambugerMenu = document.querySelector(".hamburger-menu");
 
-const aboutList = document.querySelector('.about-list');
-const DDMenu1 = document.querySelector('.dm-1');
-
-const worksList = document.querySelector('.works-list');
-const DDMenu2 = document.querySelector('.dm-2');
+window.addEventListener("scroll", () => {
+  document.body.scrollTop > 20 || document.documentElement.scrollTop > 20
+    ? navLists.forEach((navList) => navList.classList.add("sticky"))
+    : navLists.forEach((navList) => navList.classList.remove("sticky"));
+});
 
 hambugerMenu.addEventListener("click", () => {
   header.classList.toggle("active");
 });
 
-// DMLists.forEach((DMlist) => {
-//   DMlist.addEventListener("click", (e) => {
-//     console.log(e)
-//   })
-// });
-
-aboutList.addEventListener("click", () => {
-  DDMenu1.classList.toggle("d-flex");
+DMLists.forEach((DMlist) => {
+  DMlist.addEventListener("click", () => {
+    DMlist.classList.toggle("dm-show");
+  });
 });
 
-worksList.addEventListener("click", () => {
-  DDMenu2.classList.toggle("d-flex");
+DMLists[0].addEventListener("click", () => {
+  if (DMLists[1].classList.contains("dm-show"))
+    DMLists[1].classList.remove("dm-show");
 });
 
-window.addEventListener("scroll", () => {
-  document.body.scrollTop > 20 || document.documentElement.scrollTop > 20
-    ? navLists.forEach((navList) => navList.classList.add("sticky"))
-    : navLists.forEach((navList) => navList.classList.remove("sticky"));
+DMLists[1].addEventListener("click", () => {
+  if (DMLists[0].classList.contains("dm-show"))
+    DMLists[0].classList.remove("dm-show");
 });
 
 let swiper = new Swiper(".swipo", {
