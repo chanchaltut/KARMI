@@ -9,7 +9,7 @@
   --my_gradient2: linear-gradient(to top, #fda085, #f6d365);
   --swiper-theme-color: #ffffff;
   --primary: #ff6537;
-  /* --primary: #ff5522; */
+  --primary-dark: #ff5522;
   --primary-light: #ff7f58;
   --secondary: #161421;
   --tertiary: #191725;
@@ -293,6 +293,14 @@ header.active .bar::after {
   margin: 15rem auto 0;
   color: white;
   text-shadow: rgb(0 0 0 / 90%) 2px 2px 2px;
+  font-weight: 400;
+}
+
+.swiper-slide span {
+  background-color: var(--primary-dark);
+  padding: 0 0.5rem;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .slide-1 {
@@ -469,6 +477,10 @@ header.active .bar::after {
 }
 
 /* mission and vision */
+
+.mission-vision-section {
+  padding-block: 2rem;
+}
 
 .mission-vision-section img {
   width: min(30rem, 100%);
@@ -656,7 +668,7 @@ footer .f-bottom p {
     justify-content: center;
   }
 
-  header > .container {
+  header>.container {
     justify-content: space-between;
   }
 
@@ -668,6 +680,10 @@ footer .f-bottom p {
 @media (max-width: 1000px) {
   .logo {
     margin-left: 5vw;
+  }
+
+  .footer-logo {
+    margin-bottom: 1rem;
   }
 
   .hamburger-menu {
