@@ -11,12 +11,6 @@ window.addEventListener("scroll", () => {
     : header.classList.remove("sticky");
 });
 
-const links = document.querySelectorAll(".menu-list>ul>*");
-
-links.forEach((link) =>
-  link.addEventListener("click", () => header.classList.remove("active"))
-);
-
 let swiper = new Swiper(".swipo", {
   slidesPerView: 1,
   speed: 600,
