@@ -332,10 +332,10 @@ header.active .bar::after {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
-/* Welcome section */
+/* about-section section */
 
-.welcome {
-  background-color: white;
+.about-section {
+  background-color: #fff;
   margin: 0 auto 1rem;
   color: black;
   padding-block: 2rem;
@@ -350,7 +350,7 @@ header.active .bar::after {
   margin-bottom: 0.5rem;
 }
 
-.welcome img {
+.about-section img {
   width: min(37rem, 100%);
 }
 
@@ -642,7 +642,7 @@ footer .f-bottom p {
 /* Media Queries */
 
 @media (max-width: 1230px) {
-  .welcome .container {
+  .about-section .container {
     justify-content: center;
   }
 
@@ -656,7 +656,7 @@ footer .f-bottom p {
     justify-content: center;
   }
 
-  header>.container {
+  header > .container {
     justify-content: space-between;
   }
 
