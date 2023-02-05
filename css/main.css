@@ -312,6 +312,7 @@ header.active .bar::after {
   background-color: var(--primary-dark);
   padding: 0 0.5rem;
   font-weight: 600;
+  line-height: 1.4;
   transform: skewX(-10deg);
   display: inline-block;
 }
