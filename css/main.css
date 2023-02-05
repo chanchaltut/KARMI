@@ -55,6 +55,17 @@ a {
   color: inherit;
 }
 
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  width: 11rem;
+  filter: saturate(2);
+}
+
 /* Utilities */
 
 .container {
@@ -104,11 +115,6 @@ header {
   box-shadow: rgb(0 0 0 / 30%) 0 2px 20px;
 }
 
-.sticky {
-  padding: 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 5px 0px;
-}
-
 .logo {
   display: flex;
   align-items: center;
@@ -127,6 +133,10 @@ nav ul {
   padding: 1rem 0;
   transition: all 0.5s ease-in-out;
   position: relative;
+}
+
+.sticky {
+  padding: 0;
 }
 
 .nav-list::after {
@@ -163,7 +173,7 @@ nav ul {
   position: absolute;
   top: 4.2rem;
   left: -4rem;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -202,8 +212,8 @@ nav ul {
   display: flex;
 }
 
-.works-list ul {
-  display: none;
+.d-flex {
+  display: flex;
 }
 
 nav li {
@@ -486,7 +496,7 @@ footer a {
 
 .ft-left {
   background-color: var(--tertiary);
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  padding: 1.5rem;
   min-width: 10rem;
   width: 40%;
   display: flex;
@@ -543,7 +553,7 @@ footer a {
 
 .ft-right a {
   font-weight: 400;
-  margin: 0.35rem;
+  margin: 0.5rem 0;
   font-size: 1rem;
   transition: all 0.3s ease;
 }
@@ -638,7 +648,7 @@ footer .f-bottom p {
     justify-content: center;
   }
 
-  header > .container {
+  header>.container {
     justify-content: space-between;
   }
 }
@@ -690,7 +700,8 @@ footer .f-bottom p {
   }
 
   .menu-list li {
-    margin-top: 2rem;
+    margin: 0;
+    padding: 0.5rem;
   }
 
   .menu-list li a {
