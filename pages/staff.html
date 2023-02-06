@@ -1,304 +1,406 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>KARMI | Staff</title>
-<link href="web/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<!--slider-->
-<link href="web/css/slider.css" rel="stylesheet" type="text/css" media="all"/>
-<script type="text/javascript" src="web/js/jquery-1.9.0.min.js"></script>
-<script type="text/javascript" src="web/js/jquery.nivo.slider.js"></script>
-<script type="text/javascript">
-    $(window).load(function() {
-        $('#slider').nivoSlider();
-    });
-    </script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KARMI | Staff Members</title>
+	<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="/css/main.css">
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/b3b892f983.js" crossorigin="anonymous"></script>
+	<script src="/main.js" defer></script>
+
+	<style>
+		.main-heading {
+			padding-top: 7rem;
+			font-size: 1.5rem;
+		}
+
+		.main-heading::before {
+			top: 12rem;
+		}
+
+		footer {
+			margin-top: 2rem;
+		}
+
+
+		table,
+		th,
+		td {
+			border: 2px solid #e2a701;
+			border-collapse: collapse;
+			padding: .5rem;
+			text-align: center;
+		}
+
+		table {
+			margin: auto;
+			border-radius: 10px;
+			overflow: hidden;
+			width: 85%;
+		}
+
+
+		th {
+			background: #f7d5a2;
+		}
+
+		td {
+			background: #ffe9ce;
+		}
+	</style>
 </head>
+
 <body>
-<div class="header">	
-	<div class="header-top">
-		<div class="wrap">
-				<div class="logo">
-					<a href="index.html"><img src="web/images/logo.jpg" alt=""></a>
-				</div>
-				<!--<div class="search_box">
-				<form>
-				   <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
-			    </form>
-			</div>-->
-			<div class="clear"></div> 
-	    </div>
-    </div>
-	<div class="header-bottom">
-		 <div class="wrap"> 
-			 <div id='cssmenu'>
+
+	<header>
+		<div class="container">
+			<div class="logo-wrapper">
+				<a href="./index.html">
+					<img class="logo" src="/images/logo.png" alt="">
+				</a>
+			</div>
+			<nav class="menu-list">
 				<ul>
-				   <li><a href='index.html'  class='active'><span>Home</span></a></li>
-				   <li><a href='about.html'><span>About</span></a>
-				     <ul>
-				         <li><a href='mission-vision.html'><span>Mission & Vision</span></a></li>
-				         <li><a href='strategy-intervention.html'><span>Strategy & Intervention</span></a></li>
-					 <li><a href='org-structure.html'><span>Organisation Structure</span></a></li>
-					 <li><a href='policy.html'><span>Policy & Procedure</span></a></li>
-					<li><a href='board.html'><span>Board Members</span></a></li>
-					<li><a href='staff.html'><span>Staff Profile</span></a></li>
-					 <li><a href='op-area.html'><span>Operational area and focal group</span></a></li>
-				         <li><a href='org-profile.html'><span>Organisational Profile</span></a></li>
-				      </ul>
-				   </li>
-				   <li><a href='staff.html#'><span>Programmes</span></a>
-				      <ul>
-				            <li><a href='innovation-education.html'><span>Education & Awareness</span></a></li>
-				            <li><a href='sustainable-agriculture.html'><span>Agriculture & Management of Natural Resources</span></a></li>
-							<li><a href="migration-livlihood.html">Migration & Livelihood</a></li>
-							<li><a href="community-health.html">Community Health</a></li>
-							<li><a href="forest-environment.html">Forest & Environment</a></li>
-						         <li><a href="women-empowerment.html">Women Empowerment</a></li>
-							<li><a href="capacity-building.html">Capacity Building PRI</a></li>
-							
-				      </ul>
-				   </li>
-				    <li><a href='projects.html'><span>Projects</span></a></li>
-					 <li><a href='publications.html'><span>Publications</span></a></li>
-				    <li><a href='gallery.html'><span>Gallery</span></a></li>
-				   <li><a href='donate.html'><span>Donate</span></a></li>
-				   <li class='last'><a href='contact.html'><span>Contact</span></a></li>
-				    <div class="clear"></div> 
+					<li class="nav-list about-list dm-lists"><a href="#about">About</a>
+						<i class="down-toggle fa-solid fa-chevron-down"></i>
+
+						<ul class="dropdown-menu dm-1">
+							<li><a href='pages/mission-vision.html'><span>Mission & Vision</span></a></li>
+							<li><a href='pages/strategy-intervention.html'><span>Strategy & Intervention</span></a></li>
+							<li><a href='pages/org-structure.html'><span>Organisation Structure</span></a></li>
+							<li><a href='pages/policy.html'><span>Policy & Procedure</span></a></li>
+							<li><a href='pages/board.html'><span>Board Members</span></a></li>
+							<li><a href='pages/staff.html'><span>Staff Profile</span></a></li>
+							<li><a href='pages/op-area.html'><span>Operational area</span></a></li>
+							<li><a href='pages/org-profile.html'><span>Organisational Profile</span></a></li>
+						</ul>
+
+					</li>
+					<li class="nav-list works-list dm-lists"><a href="#works">Works</a>
+						<i class="down-toggle fa-solid fa-chevron-down"></i>
+
+						<ul class="dropdown-menu dm-2">
+							<li><a href='/pages/innovation-education.html'><span>Education & Awareness</span></a></li>
+							<li><a href='/pages/sustainable-agriculture.html'><span>Agriculture</span></a></li>
+							<li><a href='/pages/migration-livlihood.html'><span>Migration & Livelihood</span></a></li>
+							<li><a href='/pages/community-health.html'><span>Community Health</span></a></li>
+							<li><a href='/pages/forest-environment.html'><span>Forest & Environment</span></a></li>
+							<li><a href='/pages/women-empowerment.html'><span>Women Empowerment</span></a></li>
+							<li><a href='/pages/capacity-building.html'><span>Capacity Building PRI</span></a></li>
+						</ul>
+
+					</li>
+					<li class="nav-list"><a href="#projects">Projects</a></li>
+					<li class="nav-list"><a href="#gallery">Gallery</a></li>
+					<li class="nav-list"><a href="#contact">Contact</a></li>
 				</ul>
-			  </div>
-		 </div>
-    </div>	
-</div>
-      <!------ Slider ------------>
-		  <div class="slider">
-		  	<div class="wrap">
-	      	 <div class="slider-wrapper theme-default">
-	            <div id="slider" class="nivoSlider">
-	                <img src="web/images/banner2.jpg" alt="" />
-	                <img src="web/images/banner1.jpg" alt="" />
-	                <img src="web/images/banner3.jpg" alt="" />
-	                <img src="web/images/banner4.jpg" alt="" />
-	                <img src="web/images/banner5.jpg" alt="" />
-	            </div>
-	        </div>
-	        </div>
-   		</div>
-		<!------End Slider ------------>
-		<div class="content-top">
-			<div class="wrap">
-				<div class="section group">
-					<h2>LIST OF STAFF PROFILE, KARMI</h2>
-					<table cellspacing="1" >
-						<tr>
-							<th>Sl no.</th>
-							<th>Name</th>
-							<th>Job Title</th>
-							<th>Qualification</th>
-							<th>Narture of Responsibility</th>
-							<th>Experience in NGO</th>
-						</tr>
-						<!--<tr>
-							<td>1</td>
-							<td>
-								<b>Mr. Premananda Sahu</b><br/>
-								At/Po. Akatara, Via. M. Rampur, 
-								Dist. Kalahandi,ORISSA
+			</nav>
 
-							</td>
-							<td>President</td>
-							<td>OBC</td>
-							<td>M.A LLB</td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>
-								<b>Mrs. Sabita Mishra</b><br/>
-								C/o. Nabin Ch. Mishra
-								At/Po. Khariar, Dist. Nuapada
-							</td>
-							<td>Vice President</td>
-							<td>General</td>
-							<td>HSC</td>
-						</tr>-->
-						<tr>
-							<td>1</td>
-							<td>
-								<b>Mr. Abhimanyu Rana</b><br/>
-								
-							</td>
-							<td>Secretary</td>
-							<td>M.A. LLB, PGDRD</td>
-							<td>Over all responsibility</td>
-							<td>24  Years</td>
-						</tr>
-						<tr>
-						<td>2</td>
-							<td>
-								<b>Mr .Kubera Budek</b><br/></td>
-							<td>Programme Co-ordinator</td>
-								
-                                                         <td>M.A.,Diploma in Aurbadic Medicine</td>
-							<td>Project Management</td>
-							<td>22  years.</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td>
-							<b>Mr. Fagnu Rana</b><br/>
-								
-							</td>
-							<td>Project Coordinator</td>
-							<td>BCA</td>
-							<td>Project Management and Monitoring</td>
-							<td>15 years</td>
-						</tr>
-						<tr>
-							<td>4</td>
-					    <td>
-								<b>Mr. Kaurnakara Bhoi </b><br/>
-								
-
-							</td>
-							<td>Field Coordinator </td>
-							<td>HSC</td>
-							<td>Project Management</td>
-							<td>20  years</td>
-						</tr>
-						<tr>
-							<td>5</td>
-						    <td>
-								<b>Mr. Kishor ku Singh</b><br/>
-								
-							</td>
-							<td>Field Coordinator Coordinator</td>
-							<td>B.A</td>
-							<td>Project Management</td>
-							<td>20  years</td>
-						</tr>
-						<tr>
-						 
-							<td>6</td>
-							<td>
-								<b>Ms. Manisha Rana</b><br/>
-								
-							</td>
-							<td>Gendre Coordinaotr</td>
-							<td>M.A</td>
-							<td>Gender  Coordinator</td>
-							<td>5 years</td>
-						</tr>
-						<tr>
-						
-							<td>7</td>
-							<td>
-								<b>Mr. Sunil Chatria</b><br/>
-															</td>
-							<td>Field Coordinator</td>
-							<td>B.A</td>
-							<td>Field promotion</td>
-							<td>10 years</td>
-						</tr>
-						<tr>
-						
-							<td>8</td>
-							<td>
-								<b>Mr. Dharmu Tandi</b><br/>
-
-							</td>
-							<td>Programme coordinator</td>
-							<td>M.A</td>
-							<td>Documentation</td>
-							<td>12 years</td>
-						</tr>
-						<tr>
-						
-	                                                       <td>9</td>
-							<td>
-								<b>Mr. Bholamani Bag</b><br/>
-								
-							</td>
-							<td>Field Coordinator</td>
-							<td>B.A</td>
-							<td>Social Bank Accounting</td>
-							<td>12 years</td>
-						</tr>
-						<tr>
-	                                                       <td> 10</td>
-							<td>
-								<b>Ms. Kumudini  Sahu</b><br/>
-								
-							</td>
-							<td>Field Coordinator </td>
-							<td>B.A </td>
-							<td>Field monitoring </td>
-							<td>6 years </td>
-						</tr>
-						<tr>
-						
-	                                                       <td>11 </td>
-							<td>
-								<b>Mr.Indramani Bag </b><br/>
-								
-							</td>
-							<td>Field Coordinator </td>
-							<td>HSC </td>
-							<td>Field monitoring </td>
-							<td>9 years </td>
-						</tr>
-						<tr>
-						
-                                                    <td>12 </td>
-							<td>
-								<b>Mrs. Bikasini  Dash </b><br/>
-								
-							</td>
-							<td>Cluster Mobiliser </td>
-							<td>HSC </td>
-							<td>Field monitoring </td>
-							<td>6 years </td>
-						</tr>
-						<tr>
-					
-	                                                       <td>13 </td>
-							<td>
-								<b>Mr. Hitesh  Biswal </b><br/>
-								
-							</td>
-							<td>Accountant </td>
-							<td>B.COM </td>
-							<td>Accounting and Office management </td>
-							<td>12 years </td>
-						</tr>
-						<tr>
-						
-                                                       <td>14 </td>
-							<td>
-								<b>Mr. Gopal Naik </b><br/>
-								
-							</td>
-							<td>Office Assistant </td>
-							<td>+ 2 Arts </td>
-							<td>Record keeping and office work </td>
-							<td>3 years </td>
-						</tr>
-					</table>
-				 <div class="clear"></div> 
+			<div class="donate-box">
+				<a href="#" class="btn">Donate</a>
 			</div>
+
+			<div class="hamburger-menu">
+				<div class="bar"></div>
 			</div>
 		</div>
+	</header>
+
+	<main class="container">
+		<div class="main-heading">
+			<h1 class="stylish-heading">LIST OF STAFF PROFILE, KARMI</h1>
+		</div>
+
+		<table>
+			<tr>
+				<th>Sl no.</th>
+				<th>Name</th>
+				<th>Job Title</th>
+				<th>Qualification</th>
+				<th>Narture of Responsibility</th>
+				<th>Experience in NGO</th>
+			</tr>
+			<!--<tr>
+									<td>1</td>
+									<td>
+										<b>Mr. Premananda Sahu</b><br/>
+										At/Po. Akatara, Via. M. Rampur, 
+										Dist. Kalahandi,ORISSA
 		
-<div class="footer-bottom">
- 	<div class="wrap">
- 		<div class="copy">
-			<p> © 2015 All rights Reserved | Design by <a href="http://www.vits.in">Versatile IT Services (P) Ltd.</a></p>
-		</div>
- 	</div>
- </div>
-</body>
-</html>
+									</td>
+									<td>President</td>
+									<td>OBC</td>
+									<td>M.A LLB</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>
+										<b>Mrs. Sabita Mishra</b><br/>
+										C/o. Nabin Ch. Mishra
+										At/Po. Khariar, Dist. Nuapada
+									</td>
+									<td>Vice President</td>
+									<td>General</td>
+									<td>HSC</td>
+								</tr>-->
+			<tr>
+				<td>1</td>
+				<td>
+					<b>Mr. Abhimanyu Rana</b><br />
 
-    	
-    	
-            
+				</td>
+				<td>Secretary</td>
+				<td>M.A. LLB, PGDRD</td>
+				<td>Over all responsibility</td>
+				<td>24 Years</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>
+					<b>Mr .Kubera Budek</b><br />
+				</td>
+				<td>Programme Co-ordinator</td>
+
+				<td>M.A.,Diploma in Aurbadic Medicine</td>
+				<td>Project Management</td>
+				<td>22 years.</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>
+					<b>Mr. Fagnu Rana</b><br />
+
+				</td>
+				<td>Project Coordinator</td>
+				<td>BCA</td>
+				<td>Project Management and Monitoring</td>
+				<td>15 years</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>
+					<b>Mr. Kaurnakara Bhoi </b><br />
+
+
+				</td>
+				<td>Field Coordinator </td>
+				<td>HSC</td>
+				<td>Project Management</td>
+				<td>20 years</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>
+					<b>Mr. Kishor ku Singh</b><br />
+
+				</td>
+				<td>Field Coordinator Coordinator</td>
+				<td>B.A</td>
+				<td>Project Management</td>
+				<td>20 years</td>
+			</tr>
+			<tr>
+
+				<td>6</td>
+				<td>
+					<b>Ms. Manisha Rana</b><br />
+
+				</td>
+				<td>Gendre Coordinaotr</td>
+				<td>M.A</td>
+				<td>Gender Coordinator</td>
+				<td>5 years</td>
+			</tr>
+			<tr>
+
+				<td>7</td>
+				<td>
+					<b>Mr. Sunil Chatria</b><br />
+				</td>
+				<td>Field Coordinator</td>
+				<td>B.A</td>
+				<td>Field promotion</td>
+				<td>10 years</td>
+			</tr>
+			<tr>
+
+				<td>8</td>
+				<td>
+					<b>Mr. Dharmu Tandi</b><br />
+
+				</td>
+				<td>Programme coordinator</td>
+				<td>M.A</td>
+				<td>Documentation</td>
+				<td>12 years</td>
+			</tr>
+			<tr>
+
+				<td>9</td>
+				<td>
+					<b>Mr. Bholamani Bag</b><br />
+
+				</td>
+				<td>Field Coordinator</td>
+				<td>B.A</td>
+				<td>Social Bank Accounting</td>
+				<td>12 years</td>
+			</tr>
+			<tr>
+				<td> 10</td>
+				<td>
+					<b>Ms. Kumudini Sahu</b><br />
+
+				</td>
+				<td>Field Coordinator </td>
+				<td>B.A </td>
+				<td>Field monitoring </td>
+				<td>6 years </td>
+			</tr>
+			<tr>
+
+				<td>11 </td>
+				<td>
+					<b>Mr.Indramani Bag </b><br />
+
+				</td>
+				<td>Field Coordinator </td>
+				<td>HSC </td>
+				<td>Field monitoring </td>
+				<td>9 years </td>
+			</tr>
+			<tr>
+
+				<td>12 </td>
+				<td>
+					<b>Mrs. Bikasini Dash </b><br />
+
+				</td>
+				<td>Cluster Mobiliser </td>
+				<td>HSC </td>
+				<td>Field monitoring </td>
+				<td>6 years </td>
+			</tr>
+			<tr>
+
+				<td>13 </td>
+				<td>
+					<b>Mr. Hitesh Biswal </b><br />
+
+				</td>
+				<td>Accountant </td>
+				<td>B.COM </td>
+				<td>Accounting and Office management </td>
+				<td>12 years </td>
+			</tr>
+			<tr>
+
+				<td>14 </td>
+				<td>
+					<b>Mr. Gopal Naik </b><br />
+
+				</td>
+				<td>Office Assistant </td>
+				<td>+ 2 Arts </td>
+				<td>Record keeping and office work </td>
+				<td>3 years </td>
+			</tr>
+		</table>
+
+	</main>
+
+	<footer>
+		<div class="f-top">
+
+			<div class="ft-left">
+
+				<div class="logo-wrapper ftl ftl-logo">
+					<a href="./index.html">
+						<img class="logo footer-logo" src="/images/logo.png" alt="">
+					</a>
+				</div>
+
+				<div class="ftl ftl-phone">
+					<div class="ftl-icon">
+						<i class="fa-solid fa-phone"></i>
+					</div>
+					<div class="ftl-text">
+						<h4>Contact Number</h4>
+						<a href="tel:9777779248">9777779248</a>
+					</div>
+				</div>
+
+				<div class="ftl ftl-email">
+					<div class="ftl-icon">
+						<i class="fa-solid fa-envelope"></i>
+					</div>
+					<div class="ftl-text">
+						<h4>Email Address</h4>
+						<a href="mailto:contact@karmi.org.in">contact@karmi.org.in</a>
+					</div>
+				</div>
+
+				<div class="ftl ftl-address">
+					<div class="ftl-icon">
+						<i class="fa-solid fa-location-dot"></i>
+					</div>
+					<div class="ftl-text">
+						<h4>Head Office</h4>
+						<p>Kalahandi organization for Agriculture and Rural Marketing Initiative (KARMI)
+							At- Kadobhata, PO- Mahaling, Via- Borda, Dist.- Kalahandi, Odisha-766036, India</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="ft-right">
+				<div class="ftr-boxes ftr-info">
+					<h3>Information</h3>
+					<a href='pages/mission-vision.html'>Mission & Vision</a>
+					<a href='pages/strategy-intervention.html'>Strategy & Intervention</a>
+					<a href='pages/org-structure.html'>Organisation Structure</a>
+					<a href='pages/policy.html'>Policy & Procedure</a>
+					<a href='/pages/community-health.htm='>Community Health</a>
+				</div>
+
+				<div class="ftr-boxes ftr-profiles">
+					<h3>Our Profiles</h3>
+					<a href='pages/board.html'>Board Members</a>
+					<a href='pages/staff.html'>Staff Profile</a>
+					<a href='pages/op-area.html'>Operational area</a>
+					<a href='pages/org-profile.html'>Organisational Profile</a>
+					<a href='/pages/capacity-building.htm='>Capacity Building PRI</a>
+				</div>
+
+				<div class="ftr-boxes ftr-shortcuts">
+					<h3>Programmes</h3>
+					<a href='/pages/innovation-education.html'>Education & Awareness</a>
+					<a href='/pages/sustainable-agriculture.html'>Agriculture</a>
+					<a href='/pages/migration-livlihood.htm='>Migration & Livelihood</a>
+					<a href='/pages/forest-environment.htm='>Forest & Environment</a>
+					<a href='/pages/women-empowerment.htm='>Women Empowerment</a>
+
+				</div>
+				<div class="ftr-boxes ftr-qlinks">
+					<h3>Quick Links</h3>
+					<a href="/" class="ftr-link-1">Home</a>
+					<a href="#" class="ftr-link-2">Contact Us</a>
+					<a href="#" class="ftr-link-3">About Us</a>
+					<a href="#" class="ftr-link-4">Our Projects</a>
+					<a href="#" class="ftr-link-5">Donate Us</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="f-bottom">
+			<p>Copyright &#169 All Rights Reserved | KARMI</p>
+		</div>
+	</footer>
+
+</body>
+
+</html>
