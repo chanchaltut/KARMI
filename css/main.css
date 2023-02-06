@@ -943,10 +943,6 @@ footer .f-bottom p {
 
 @media (max-width: 400px) {
 
-  .mh-4 h2 {
-    font-size: 2rem;
-  }
-
   .ft-right {
     justify-content: flex-start;
   }
