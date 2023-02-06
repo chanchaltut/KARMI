@@ -388,23 +388,24 @@ header.active .bar::after {
 }
 
 .slide-1 {
-  background: url(/images/Banner-Pic_home-page-1.jpg) center center/cover;
+  background: url(/images/slider-1.webp) center center/cover;
 }
 
 .slide-2 {
-  background: url(/images/Banner-Pic_home-page-2.jpeg) center center/cover;
+  background: url(/images/slider-2.jpeg) center center/cover;
 }
 
 .slide-3 {
-  background: url(/images/Banner-Pic_home-page-3.jpg) center center/cover;
+  background: url(/images/slider-3.jpg) center center/cover;
 }
 
 .slide-4 {
-  background: url(/images/Banner-Pic_home-page-4.jpeg) center center/cover;
+  background: url(/images/slider-4.jpg) center center/cover;
 }
 
 .slide-5 {
-  background: url(/images/Banner-Pic_home-page-5.jpg) center center/cover;
+  filter: brightness(0.9);
+  background: url(/images/slider-5.jpeg) center center/cover;
 }
 
 .swipo {
