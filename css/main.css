@@ -882,7 +882,7 @@ footer .f-bottom p {
   }
 
   .main-heading {
-    margin: 0px 0 2.5rem;
+    margin: 0 auto 2.5rem;
   }
 
   .main-heading::before {
@@ -898,6 +898,10 @@ footer .f-bottom p {
 
   .mh-2::before {
     left: 46.1%;
+  }
+
+  .stylish-heading {
+    font-size: 2rem;
   }
 
   .stylish-heading::before {
