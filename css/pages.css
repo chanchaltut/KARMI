@@ -16,7 +16,7 @@ main .container {
 }
 
 .container p {
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 /* Strategy */
@@ -67,7 +67,7 @@ td {
 
 .round-list {
   list-style: circle;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .bold {
