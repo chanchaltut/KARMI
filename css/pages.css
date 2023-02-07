@@ -16,22 +16,19 @@ main .container {
 }
 
 .container p {
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
 /* Strategy */
 
-.strategy {
-  display: flex;
-}
-
-.strategy img {
+.strategy img,
+.d-flex img {
   width: min(34rem, 100%);
 }
 
-.Intervention {
+.d-block {
   display: block;
-  margin-block: 0rem 2rem;
+  margin: 0rem 1rem;
 }
 
 /* Footer */
@@ -64,4 +61,20 @@ th {
 
 td {
   background: #ffe9ce;
+}
+
+/* Utility Section */
+
+.round-list {
+  list-style: circle;
+  margin-left: 1rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.d-flex {
+  display: flex !important;
+  justify-content: space-between;
 }
