@@ -1,0 +1,67 @@
+/* Header */
+
+.main-heading {
+  padding-top: 7rem;
+  font-size: 1.5rem;
+}
+
+.main-heading::before {
+  top: 12rem;
+}
+
+/* Main section */
+
+main .container {
+  display: block;
+}
+
+.container p {
+  margin: 0.5rem;
+}
+
+/* Strategy */
+
+.strategy {
+  display: flex;
+}
+
+.strategy img {
+  width: min(34rem, 100%);
+}
+
+.Intervention {
+  display: block;
+  margin-block: 0rem 2rem;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 2rem;
+}
+
+/* Table */
+
+table,
+th,
+td {
+  border: 2px solid #e2a701;
+  border-collapse: collapse;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+table {
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 85%;
+}
+
+th {
+  background: #f7d5a2;
+}
+
+td {
+  background: #ffe9ce;
+}
