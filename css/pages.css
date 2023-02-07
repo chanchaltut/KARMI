@@ -15,15 +15,17 @@ main .container {
   display: block;
 }
 
-.container p {
-  margin: 1rem;
+.container p,
+.text-content h2,
+.container h2 {
+  margin: 1rem 0;
 }
 
 /* Strategy */
 
-.strategy img,
 .d-flex img {
   width: min(34rem, 100%);
+  border-radius: 0.5rem;
 }
 
 .d-block {
@@ -77,4 +79,26 @@ td {
 .d-flex {
   display: flex !important;
   justify-content: space-between;
+  margin: 0 auto;
+}
+
+@media (max-width: 1230px) {
+  .text-content {
+    max-width: 44%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .text-content {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .d-flex {
+    justify-content: center;
+  }
+
+  .container {
+    padding-inline: 0.5rem;
+  }
 }
