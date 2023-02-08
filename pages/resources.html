@@ -5,15 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KARMI | Donate</title>
+    <title>KARMI | Resources</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/works-pages.css">
-    <link rel="stylesheet" href="/css/donate.css">
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/b3b892f983.js" crossorigin="anonymous"></script>
     <script src="/main.js" defer></script>
+    <style>
+        h2 {
+            margin-block: 0.5rem;
+        }
+
+        .text-content {
+            max-width: 45rem;
+        }
+
+        .d-block ul {
+            margin-bottom: 1rem;
+        }
+
+        .main-heading::before {
+            top: 12rem;
+            left: 44.7%;
+        }
+
+        .d-flex-1 {
+            justify-content: space-around;
+        }
+
+        @media (max-width:550px) {
+
+            .main-heading::before {
+                top: 11rem;
+                left: 42.7%;
+            }
+        }
+    </style>
 
 </head>
 
@@ -64,7 +93,7 @@
             </nav>
 
             <div class="donate-box">
-                <a href="/pages/donate.html" class="btn">Donate</a>
+                <a href="#" class="btn">Donate</a>
             </div>
 
             <div class="hamburger-menu">
@@ -75,48 +104,30 @@
 
     <main>
         <div class="main-heading">
-            <h1 class="stylish-heading">Donate Us</h1>
+            <h1 class="stylish-heading">Resources</h1>
         </div>
 
         <div class="container">
-            <div class="sub-container">
-                <div class="cnt">
-                    <div class="text-content">
-                        <h2 class="classy-header">For Foreign
-                            Contribution</h2>
-                        <p>
-                            <span class="bold">Bank Name :</span> State Bank of India,<br>
-                            <span class="bold">Account No : </span> 11858343076<br>
-                            <span class="bold">IFSC Code : </span> SBIN0008880<br>
-                            <span class="bold">Branch :</span> Chandotara Branch<br>
-                            <span class="bold">Address :</span> At/Po. - Chandotara, <br>
-                            Via - Sindhekela,<br>
-                            Dist. - Bolangir, Pin - 767035,<br>
-                            State - Odisha INDIA
-                        </p>
-                    </div>
-                    <img src="/images/qr-code-for-foreign-donation.png" alt="">
+            <div class="container d-flex d-flex-1">
+                <div class="text-content">
+                    <h2>Reports</h2>
+                    <ul>
+                        <li><a href="pdf/ANNUAL REPORT 14-15.pdf">Annual Report 2014-15</a></li>
+                        <li><a href="pdf/ANNUAL REPORT 2013-14.pdf">Annual Report 2013-14</a></li>
+                        <li><a href="pdf/ANNUAL REPORT 2012-13.pdf">Annual Report 2012-13</a></li>
+
+                    </ul>
+                    <h2>Legal Documents</h2>
+                    <ul>
+                        <li><a href="pdf/SOCIETY REGD. COPY.pdf">Society Registration Certificate</a></li>
+                        <li><a href="pdf/FCRA REGD. COPY.pdf">FCRA Certificate</a></li>
+                        <li><a href="pdf/12 A OF IT ACT.pdf">12A Certificate</a></li>
+                        <li><a href="pdf/80G  OF IT ACT.Jpg">80G Certificate</a></li>
+                    </ul>
                 </div>
-                <br>
-                <div class="cnt">
-                    <div class="text-content">
-                        <h2 class="classy-header">For Indian
-                            Contribution</h2>
-                        <p>
-                            <span class="bold">Bank Name :</span> State Bank of India,<br>
-                            <span class="bold">Account No : </span> 11858343724<br>
-                            <span class="bold">IFSC Code : </span> SBIN0008880<br>
-                            <span class="bold">Branch :</span> Chandotara Branch<br>
-                            <span class="bold">Address :</span> At/Po. - Chandotara, <br>
-                            Via - Sindhekela,<br />
-                            Dist. - Bolangir, Pin - 767035,<br />
-                            State - Odisha INDIA
-                        </p>
-                    </div>
-                    <img src="/images/qr-code-for-indian-donation.png" alt="">
-                </div>
+                <img src="/images/resources.jpg" alt="">
+
             </div>
-        </div>
     </main>
 
     <footer>

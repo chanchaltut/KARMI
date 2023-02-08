@@ -16,14 +16,18 @@ main .container {
 }
 
 .container p {
-  margin: 0.5rem;
+  margin: 1.25rem 0.5rem;
 }
 
 /* Strategy */
 
-.strategy img,
+
 .d-flex img {
-  width: min(34rem, 100%);
+  width: min(24rem, 100%);
+  height: min(24rem, 100%);
+  border-radius: 0.5rem;
+  filter: brightness(0.9);
+  margin: 1.5rem 0.5rem;
 }
 
 .d-block {
@@ -56,14 +60,12 @@ footer {
   background-color: var(--primary);
 }
 
-
-
 .classy-header::after {
   content: "";
   position: absolute;
   top: 2rem;
   left: 1rem;
-  width: 70%;
+  width: 68%;
   height: 0.1rem;
   border-radius: 15rem;
   background-color: gray;
