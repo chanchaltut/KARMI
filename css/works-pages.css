@@ -78,3 +78,30 @@ td {
   display: flex !important;
   justify-content: space-between;
 }
+
+@media (max-width:550px) {
+  .stylish-heading {
+    font-size: 2.5rem;
+  }
+
+  .main-heading::before {
+    top: 11rem;
+    left: 47.5%;
+  }
+}
+
+@media (max-width:500px) {
+  .stylish-heading {
+    font-size: 2.2rem;
+  }
+}
+
+@media(max-width:400px) {
+  .stylish-heading {
+    font-size: 2rem;
+  }
+
+  .main-heading::before {
+    left: 46.75%;
+  }
+}
