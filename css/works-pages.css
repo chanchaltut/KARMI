@@ -73,10 +73,23 @@ footer {
 
 /* Table */
 
+.table-container {
+  width: max(30rem, 90%);
+  overflow-x: auto;
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+
+table,
+tbody {
+  border: 2px solid #ff8a67;
+  border-radius: 0.5rem;
+}
+
 table,
 th,
 td {
-  border: 2px solid #e2a701;
+  border: 2px solid #ff8a67;
   border-collapse: collapse;
   padding: 0.5rem;
   text-align: center;
@@ -85,21 +98,22 @@ td {
 table {
   margin: auto;
   border-radius: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 85%;
 }
 
 th {
-  background: #f7d5a2;
+  background: #ffcfaf;
 }
 
 td {
-  background: #ffe9ce;
+  background: #ffe5d0;
 }
+
 
 /* Utility Section */
 
-.round-list {
+main ul li {
   list-style: circle;
   margin-left: 2rem;
 }
