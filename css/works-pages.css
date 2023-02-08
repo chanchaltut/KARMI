@@ -37,6 +37,38 @@ footer {
   margin-top: 2rem;
 }
 
+.classy-header {
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--primary);
+  position: relative;
+}
+
+.classy-header::before {
+  content: "";
+  position: absolute;
+  top: 1.85rem;
+  left: 0.1rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+
+
+
+.classy-header::after {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  width: 70%;
+  height: 0.1rem;
+  border-radius: 15rem;
+  background-color: gray;
+}
+
 /* Table */
 
 table,
@@ -77,6 +109,17 @@ td {
 .d-flex {
   display: flex !important;
   justify-content: space-between;
+}
+
+@media (max-width:1250px) {
+  .d-flex {
+    justify-content: space-around;
+  }
+
+  .text-content {
+    max-width: 100%;
+  }
+
 }
 
 @media (max-width:550px) {
