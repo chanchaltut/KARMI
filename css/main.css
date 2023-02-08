@@ -899,6 +899,10 @@ footer .f-bottom p {
     left: 46.1%;
   }
 
+  .stylish-heading {
+    font-size: 2rem;
+  }
+
   .stylish-heading::before {
     top: 3.867rem;
     background-color: var(--primary-dark);

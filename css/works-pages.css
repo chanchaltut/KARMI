@@ -1,0 +1,107 @@
+/* Header */
+
+.main-heading {
+  padding-top: 7rem;
+  font-size: 1.5rem;
+}
+
+.main-heading::before {
+  top: 12rem;
+}
+
+/* Main section */
+
+main .container {
+  display: block;
+}
+
+.container p {
+  margin: 0.5rem;
+}
+
+/* Strategy */
+
+.strategy img,
+.d-flex img {
+  width: min(34rem, 100%);
+}
+
+.d-block {
+  display: block;
+  margin: 0rem 1rem;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 2rem;
+}
+
+/* Table */
+
+table,
+th,
+td {
+  border: 2px solid #e2a701;
+  border-collapse: collapse;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+table {
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 85%;
+}
+
+th {
+  background: #f7d5a2;
+}
+
+td {
+  background: #ffe9ce;
+}
+
+/* Utility Section */
+
+.round-list {
+  list-style: circle;
+  margin-left: 2rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.d-flex {
+  display: flex !important;
+  justify-content: space-between;
+}
+
+@media (max-width:550px) {
+  .stylish-heading {
+    font-size: 2.5rem;
+  }
+
+  .main-heading::before {
+    top: 11rem;
+    left: 47.5%;
+  }
+}
+
+@media (max-width:500px) {
+  .stylish-heading {
+    font-size: 2.2rem;
+  }
+}
+
+@media(max-width:400px) {
+  .stylish-heading {
+    font-size: 2rem;
+  }
+
+  .main-heading::before {
+    left: 46.75%;
+  }
+}
