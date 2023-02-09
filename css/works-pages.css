@@ -114,7 +114,7 @@ td {
 /* Utility Section */
 
 main ul li {
-  list-style: circle;
+  list-style: disc;
   margin-left: 2rem;
 }
 
