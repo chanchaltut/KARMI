@@ -707,7 +707,11 @@ footer a {
   border-radius: 9px;
   margin-right: 1rem;
   margin-bottom: 1rem;
-  max-height: 2.3rem;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all 0.5s ease;
 }
 
@@ -757,7 +761,7 @@ footer .f-bottom p {
     justify-content: center;
   }
 
-  header > .container {
+  header>.container {
     justify-content: space-between;
   }
 
