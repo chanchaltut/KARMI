@@ -2,7 +2,7 @@ const header = document.querySelector("header");
 const navLists = document.querySelectorAll(".nav-list");
 const DMLists = document.querySelectorAll(".dm-lists");
 const hambugerMenu = document.querySelector(".hamburger-menu");
-const main = document.querySelector("main");
+const ul = document.querySelector(".menu-list>ul");
 
 window.addEventListener("scroll", () => {
   document.body.scrollTop > 20 || document.documentElement.scrollTop > 20
@@ -18,9 +18,19 @@ DMLists.forEach((DMlist) => {
   DMlist.addEventListener(
     "click",
     () => DMlist.classList.toggle("dm-show"),
-    main.addEventListener("click", () => DMlist.classList.remove("dm-show"))
+    document.body.addEventListener("click", () =>
+      DMlist.classList.remove("dm-show")
+    )
   );
 });
+
+ul.addEventListener(
+  "click",
+  function (ev) {
+    ev.stopPropagation();
+  },
+  false
+);
 
 DMLists[0].addEventListener("click", () => {
   if (DMLists[1].classList.contains("dm-show"))
