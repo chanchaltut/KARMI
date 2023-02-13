@@ -744,6 +744,156 @@ footer .f-bottom p {
   font-weight: 600;
 }
 
+/* Donate Page  */
+
+.donate-sub-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-block: 4rem;
+}
+
+.donate-cnt {
+  display: flex;
+  flex-wrap: nowrap;
+  min-width: 37rem;
+}
+
+.donate-cnt h2 {
+  margin-top: 0 !important;
+}
+
+.donate-cnt img {
+  width: 15rem;
+  border-radius: 10px;
+  margin-left: 2rem;
+}
+
+.donate-classy-header {
+  margin-left: 0.5rem;
+}
+
+.donate-main-heading::before {
+  top: 12rem !important;
+  left: 44.7% !important;
+}
+
+/* About Us Page  */
+
+.about-main h2 {
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  color: #ff6537;
+  width: fit-content;
+  border-bottom: 2px solid gray;
+  border-bottom-style: double;
+  border-radius: 5px;
+}
+
+.about-main h3 {
+  margin-left: 0.5rem;
+  margin-block: 0.5rem;
+  color: black;
+  width: fit-content;
+  border-bottom: 2px solid gray;
+  border-bottom-style: dashed;
+}
+
+.text-content3 {
+  max-width: 34rem;
+}
+
+.text-content4 {
+  max-width: 45rem;
+}
+
+.small-d-block ul {
+  margin-bottom: 1rem;
+}
+
+.small-main-heading::before {
+  top: 12rem;
+  left: 44.7%;
+}
+
+.d-flex-3 img {
+  width: min(30rem, 100%);
+  height: min(30rem, 100%);
+}
+
+.d-flex-1 {
+  justify-content: space-evenly;
+}
+
+.d-flex-1 ul li {
+  color: #ff6537;
+  border-bottom: 1px solid #ff6537;
+  width: fit-content;
+  width: -webkit-fit-content;
+}
+
+.number-ul li {
+  list-style: decimal;
+}
+
+.about-container {
+  width: min(1100px, 100% - 2rem);
+}
+
+.about-main table {
+  width: 97.5%;
+}
+
+/* Other Pages  */
+
+.org-main h2 {
+  margin-top: 1.5rem;
+}
+
+.resources-main h2 {
+  margin-block: 0.5rem;
+}
+
+.resources-d-flex-1 {
+  justify-content: space-evenly;
+}
+
+.migration-main h2 {
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.community-main h2 {
+  margin-top: 1rem !important;
+}
+
+.community-main h3 {
+  margin-top: 0.5rem;
+}
+
+.d-flex-5 {
+  margin: -2rem auto 2rem;
+  align-items: flex-end;
+}
+
+.d-flex-5 img {
+  width: min(35rem, 100%);
+}
+
+.contact-main h3 {
+  margin-block: 1rem -1rem;
+}
+
+.policy-main .container p,
+.policy-main .text-content h2,
+.policy-main .container h2 {
+  margin: 0;
+}
+
+.policy-main h2 {
+  margin-top: 1.5rem !important;
+}
+
 /* Media Queries */
 
 @media (max-width: 1230px) {
@@ -753,6 +903,14 @@ footer .f-bottom p {
 
   .text-content {
     max-width: 58%;
+  }
+
+  .donate-sub-container {
+    justify-content: center;
+  }
+
+  .donate-cnt {
+    margin: 1rem 0;
   }
 }
 
@@ -950,11 +1108,38 @@ footer .f-bottom p {
   .photo-gallery .img {
     width: 70vw;
   }
+
+  .donate-main-heading::before {
+    top: 11rem !important;
+    left: 42.7% !important;
+  }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 640px) {
   .photo-gallery .img {
     width: 70vw;
+  }
+
+  .donate-sub-container {
+    justify-content: center;
+    margin-block: 2rem;
+  }
+
+  .donate-cnt {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 22rem;
+  }
+
+  .donate-text-content {
+    margin-left: 2rem;
+    min-width: 20rem;
+  }
+
+  .donate-cnt img {
+    margin-left: 2.5rem;
+    margin-top: 1rem;
   }
 }
 
