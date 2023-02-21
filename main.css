@@ -1112,9 +1112,10 @@ td {
     display: block;
   }
 
-  .db > a {
+ .db > a {
     margin: 0 auto;
-  }
+    margin-top: -4rem;
+}
 
   header nav {
     position: fixed;
