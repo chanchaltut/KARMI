@@ -100,7 +100,10 @@ a {
   transform: rotate(180deg);
 }
 
-.main-heading,
+.dfc {
+  position: relative;
+}
+
 .index-main-heading {
   position: relative;
   text-align: center;
@@ -110,11 +113,10 @@ a {
   padding: 0.2em;
 }
 
-.dfc {
-  position: relative;
+.mh-3 {
+  color: white;
 }
 
-.main-heading::before,
 .index-main-heading::before {
   content: "";
   position: absolute;
@@ -232,7 +234,7 @@ header {
   position: relative;
 }
 
-.main-menu > li:not(.dropdown):after {
+.main-menu>li:not(.dropdown):after {
   content: "";
   display: block;
   margin: auto;
@@ -244,7 +246,7 @@ header {
   transition: all 0.7s ease;
 }
 
-.main-menu > li:hover::after {
+.main-menu>li:hover::after {
   width: 99%;
   background: var(--primary);
 }
@@ -258,7 +260,7 @@ header {
   transition: 0.3s ease;
 }
 
-.main-menu > li > a {
+.main-menu>li>a {
   font-size: 1.3rem;
   font-weight: 600;
   padding: 1.25rem 0.5rem;
@@ -323,12 +325,15 @@ header {
   margin: 7px 0;
   transition: 0.5s;
 }
+
 header.active .menu-btn:before {
   transform: translateY(12px) rotate(135deg);
 }
+
 header.active .menu-btn:after {
   transform: translateY(-12px) rotate(-135deg);
 }
+
 header.active .menu-btn div {
   transform: scale(0);
 }
@@ -816,15 +821,25 @@ main li {
 /* Pages CSS  */
 
 .main-heading {
-  padding-top: 7rem;
+  position: relative;
+  text-align: center;
   font-size: 1.5rem;
+  width: fit-content;
   margin: 0 auto 2.5rem;
+  padding: 0.2em;
+  padding-top: 7rem;
 }
 
 .main-heading::before {
+  content: "";
+  position: absolute;
   top: 12rem;
   left: 47.75%;
+  width: 2rem;
   background-color: #f0f4ff;
+  height: 0.9rem;
+  border-radius: 0;
+  z-index: 9;
 }
 
 .small-main-heading::before {
@@ -1047,7 +1062,7 @@ td {
     justify-content: center;
   }
 
-  header > .container {
+  header>.container {
     justify-content: space-between;
   }
 
@@ -1112,10 +1127,10 @@ td {
     display: block;
   }
 
- .db > a {
+  .db>a {
     margin: 0 auto;
     margin-top: -4rem;
-}
+  }
 
   header nav {
     position: fixed;
@@ -1138,7 +1153,7 @@ td {
     height: 100%;
   }
 
-  .main-menu > li > a {
+  .main-menu>li>a {
     padding: 0.5rem 0.5rem;
     margin-inline: 0.4rem;
   }
@@ -1176,7 +1191,7 @@ td {
   }
 
   .container {
-    padding-inline: 0.5rem;
+    padding-inline: 0.2rem;
   }
 }
 
@@ -1229,8 +1244,8 @@ td {
     justify-content: space-around;
   }
 
-  h2 {
-    font-size: 2.25rem;
+  .pages-main h2 {
+    font-size: 2rem;
   }
 
   .hamburger-menu {
@@ -1328,7 +1343,7 @@ td {
 
 @media (max-width: 500px) {
   .stylish-heading {
-    font-size: 2.2rem;
+    font-size: 2.25rem;
   }
 }
 
@@ -1345,6 +1360,18 @@ td {
   .stylish-heading {
     font-size: 2rem;
   }
+
+  .long-stylish-heading {
+    font-size: 1.85rem !important;
+  }
+
+  .pages-main h2 {
+    font-size: 1.85rem !important;
+  }
+
+  /* .pages-main .container {
+    padding-inline: 0;
+  } */
 
   .ft-right {
     justify-content: flex-start;
