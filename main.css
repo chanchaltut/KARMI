@@ -148,12 +148,17 @@ a {
   z-index: 8;
   width: 43%;
   left: 57%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
 }
 
 .mh-3 h2::after {
   width: 46.1%;
   left: 0;
   background-color: rgb(223, 223, 223);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .stylish-heading {
@@ -1299,12 +1304,10 @@ td {
 
   .mh-3 h2::after {
     width: 46.1%;
-    background-color: rgb(223, 223, 223);
   }
 
   .mh-3::before {
     top: 4.38rem;
-    background-color: rgb(223, 223, 223);
     left: 57%;
   }
 
