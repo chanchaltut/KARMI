@@ -325,31 +325,41 @@ header {
 
 .menu-btn {
   display: none;
-  width: 2.5rem;
+  width: 2rem;
 }
 
-.menu-btn:before,
-.menu-btn:after,
-.menu-btn div {
-  background: #2a2a2a;
-  content: "";
-  display: block;
+.menu-btn .bar {
+  position: relative;
+  width: 100%;
   height: 3px;
+  background-color: black;
   border-radius: 3px;
-  margin: 7px 0;
-  transition: 0.5s;
+  transition: all 0.5s ease 0s;
 }
-
-header.active .menu-btn:before {
-  transform: translateY(12px) rotate(135deg);
+.bar::before,
+.bar::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 3px;
+  transition: all 0.5s ease 0s;
 }
-
-header.active .menu-btn:after {
-  transform: translateY(-12px) rotate(-135deg);
+.bar::before {
+  transform: translateY(-8px);
 }
-
-header.active .menu-btn div {
-  transform: scale(0);
+.bar::after {
+  transform: translateY(8px);
+}
+header.active .menu-btn .bar {
+  background-color: transparent;
+}
+header.active .bar::before {
+  transform: translateY(0px) rotate(-45deg);
+}
+header.active .bar::after {
+  transform: translateY(0px) rotate(45deg);
 }
 
 /* slider section */
@@ -1146,11 +1156,6 @@ td {
     display: block;
   }
 
-  .db-2 {
-    padding-block: 0;
-    margin: 1rem;
-  }
-
   header nav {
     position: fixed;
     background: var(--my_gradient);
@@ -1210,6 +1215,11 @@ td {
 
   .container {
     padding-inline: 0.2rem;
+  }
+
+  .db-2 {
+    padding-block: 0 !important;
+    margin: 1rem !important;
   }
 }
 
